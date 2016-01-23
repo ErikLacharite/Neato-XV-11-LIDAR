@@ -25,7 +25,7 @@ def plot_data(angle,dist_mm):
 
 def plot_finalize():
     pyplot.scatter(X,Y)
-    pyplot.savefig('example01.png')
+    pyplot.savefig('LIDAR_OUT.PNG')
 
 ####begin
 ser = serial.Serial(com_port,baud_rate)
