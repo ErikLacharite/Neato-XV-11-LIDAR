@@ -5,10 +5,10 @@ This code was put together to interface with the Neato XV-11 LIDAR. Please see r
 ![Neato XV-11 LIDAR](img.jpg)
 
 # Wiring:
-## Motor:
+## Motor (2 pin):
     Black --> Ground
     Red --> 22ohm --> 3.3v (or just 3.3v)
-## Sensor JST:
+## Sensor (4 pin JST):
     Red --> 3.3v
     Brown (RX) --> RX (not a mistake, but may need to be reversed in different setups. See bellow about the serial connection)
     Orange (TX) --> TX
@@ -23,7 +23,7 @@ This code was put together to interface with the Neato XV-11 LIDAR. Please see r
     2. run "python XV-11_main.py"
     3. Wait for data to be collected
     4. Press CTRL+C
-    5. The image "LIDAR_OUT.PNG" will be saved into the same directory as the code
+    5. The image "LIDAR_OUT.PNG" will be saved into the current directory
 
 # Notes:
     1. The motor is not be controlled via PWM, between [3.3v or 22ohm+3.3v] the correct speed is reached.
@@ -39,5 +39,5 @@ Included
 Included in python
 
 #References
-* Outline of the communication structure: <https://xv11hacking.wikispaces.com/LIDAR+Sensor>  
-* Translate data to real world results: <https://github.com/Xevel/NXV11>  
+* Outline of the communication structure: <https://xv11hacking.wikispaces.com/LIDAR+Sensor>
+* Translate data to real world results: <https://github.com/Xevel/NXV11>
