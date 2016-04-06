@@ -37,6 +37,10 @@ Included
 
 ## matplotlib
 Included in python
+if not (pip install matplotlib)
+
+# Additional Notes After Working With LIDAR for 6 Months:
+1. When the LIDAR reads things bellow 0.1 m or past 6 m the result is either the lidar submits error packets or stale data. The stale data occurs in the case that something appears in its range and then is removed and only open space remains (>6 m).
 
 #References
 * Outline of the communication structure: <https://xv11hacking.wikispaces.com/LIDAR+Sensor>
